@@ -6,7 +6,8 @@ scikit-learn
 flask
 xgboost
 catboost
-streamlit
+streamlit==1.19.0
+altair==4.2.2
 mlflow
 yfinance
 ta
