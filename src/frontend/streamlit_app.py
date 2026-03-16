@@ -11,7 +11,7 @@ import plotly.subplots as sp
 # Load trained model
 # --------------------------------
 
-model = pickle.load(open("artifacts\model.pkl", "rb"))
+model = pickle.load(open("\artifacts\model.pkl", "rb"))
 
 st.set_page_config(page_title="AI Trading Dashboard", layout="wide")
 
