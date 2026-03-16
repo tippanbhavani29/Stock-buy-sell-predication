@@ -6,12 +6,15 @@ import yfinance as yf
 import ta
 import plotly.graph_objects as go
 import plotly.subplots as sp
-
+import os
 # --------------------------------
 # Load trained model
 # --------------------------------
 
-model = pickle.load(open("\artifacts\model.pkl", "rb"))
+model_path = os.path.join("artifacts", "model.pkl")
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
+
 
 st.set_page_config(page_title="AI Trading Dashboard", layout="wide")
 
